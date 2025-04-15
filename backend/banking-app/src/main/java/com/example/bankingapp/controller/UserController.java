@@ -10,6 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
+
+@CrossOrigin(origins = "http://localhost:3000") // Allow frontend origin
 @RestController
 @RequestMapping("/api/users")
 public class UserController {
@@ -17,13 +20,20 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    // Removed unused UserRepository field
+
     // Get all users
     @GetMapping
     public List<User> getAllUsers() {
         return userService.getAllUsers();
     }
 
-    // Create a new user
+    // Create a new user (used for registration as well)
+    @PostMapping("/register")
+    public ResponseEntity<User> registerUser(@Valid @RequestBody UserDTO userDTO) {
+        return createUser(userDTO); // Reuse the createUser method
+    }
+
     @PostMapping
     public ResponseEntity<User> createUser(@Valid @RequestBody UserDTO userDTO) {
         User user = new User();

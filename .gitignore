@@ -25,6 +25,7 @@ yarn-error.log*
 
 # Node.js dependencies
 node_modules/
+frontend/node_modules/
 
 # TypeScript build output
 *.tsbuildinfo
@@ -35,23 +36,35 @@ tsconfig.tsbuildinfo
 build/
 dist/
 out/
+frontend/build/
+frontend/dist/
+frontend/out/
 
 # IDE-specific files
 .vscode/
 .idea/
 *.iml
+frontend/.vscode/
+frontend/.idea/
+frontend/*.iml
 
 # System files
 .DS_Store
 Thumbs.db
+frontend/.DS_Store
+frontend/Thumbs.db
 
 # Temporary files
 *.tmp
 *.swp
+frontend/*.tmp
+frontend/*.swp
 
 # Environment files
 .env
 *.env
+frontend/.env
+frontend/*.env
 
 # Docker files
 docker/docker-compose.yml
@@ -59,6 +72,8 @@ docker/docker-compose.yml
 # Package manager lock files
 package-lock.json
 yarn.lock
+frontend/package-lock.json
+frontend/yarn.lock
 
 # Ignore package.json (optional, if you don't want to track it)
 package.json
@@ -70,6 +85,9 @@ coverage/
 *.cache/
 *.history/
 public/static/
+frontend/*.cache/
+frontend/*.history/
+frontend/public/static/
 
 # Ignore all files in `frontend/public` except `index.html`
 frontend/public/*

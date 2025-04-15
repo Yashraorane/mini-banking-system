@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid #e7eef4;
+  background-color: var(--header-background);
+  color: var(--text-color);
+  padding: 0.875rem 1.5rem; /* Reduced padding for a more compact header */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--text-color); /* Use theme variable for text color */
+  transition: color 0.3s ease; /* Smooth transition for theme change */
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem; /* Reduced gap for closer alignment */
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #0d151c;
+  margin-left: auto; /* Push navigation closer to buttons */
+  margin-right: 2.5rem; /* Added margin to the right for spacing */
+  padding: 0.5rem 0; /* Reduced height by decreasing padding */
+}
+
+.header-nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+  color: var(--link-hover-color);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 0.75rem; /* Reduced gap between buttons */
+}
+
+button {
+  background-color: var(--button-background);
+  color: var(--button-text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--link-hover-color);
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 24px;
+  color: #0d151c;
+  margin-right: 10px;
+}
+
+.profile-dropdown {
+  display: none;
+  position: absolute;
+  top: 120%;
+  right: 0;
+  background-color: white;
+  color: #0d151c;
+  border: 1px solid #e7eef4;
+  border-radius: 8px;
+  width: 180px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 100;
+  transition: opacity 0.2s ease;
+}
+
+.profile-section:hover .profile-dropdown {
+  display: block;
+}
+
+.profile-dropdown p.profile-username {
+  padding: 8px 16px;
+  border-bottom: 1px solid #e7eef4;
+  font-weight: bold;
+  margin: 0;
+}
+
+.profile-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-dropdown li {
+  padding: 8px 16px;
+}
+
+.profile-dropdown li button {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: #0d151c;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Add spacing between icon and text */
+}
+
+.profile-dropdown li button:hover {
+  background-color: #f5f7fa;
+  color: #2094f3;
+}

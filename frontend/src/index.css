@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  background-color: #f8fafc; /* Light slate background */
+  color: #0d151c; /* Default text color */
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Container queries support */
+.container {
+  container-type: inline-size;
+}
+
+/* Responsive styles */
+@container (min-width: 480px) {
+  /* Styles for container width >= 480px */
+}
+
+@container (min-width: 864px) {
+  /* Styles for container width >= 864px */
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the page takes up the full viewport height */
+}
+
+footer {
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+html,body{
+  overflow: hidden;
+}

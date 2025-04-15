@@ -1,0 +1,70 @@
+.hero-section {
+  display: flex;
+  flex-direction: row; /* Ensure items are in a row */
+  gap: 1.5rem; /* Reduce gap for better alignment */
+  padding: 2rem 1rem; /* Reduce padding */
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  align-items: center; /* Vertically align items */
+  justify-content: center; /* Center items horizontally */
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 500px; /* Reduce max width */
+  max-height: 250px; /* Reduce max height */
+  object-fit: cover; /* Ensure the image scales properly */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* Reduce gap between text and buttons */
+  max-width: 350px; /* Reduce max width */
+}
+
+.hero-text h1 {
+  font-size: 2rem; /* Reduce font size */
+  font-weight: 800;
+  color: #0d151c;
+  line-height: 1.2;
+}
+
+.hero-text p {
+  font-size: 0.9rem; /* Reduce font size */
+  color: #0d151c;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 0.75rem; /* Reduce gap between buttons */
+}
+
+.btn-primary {
+  padding: 0.5rem 1rem; /* Reduce padding */
+  background-color: #2094f3;
+  color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #176bb3;
+}
+
+.btn-secondary {
+  padding: 0.5rem 1rem; /* Reduce padding */
+  background-color: #e7eef4;
+  color: #0d151c;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #d6e4f0;
+}

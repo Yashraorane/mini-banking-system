@@ -11,6 +11,8 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.time.LocalDateTime;
 import java.util.HashSet;
 import java.util.List;
@@ -27,6 +29,7 @@ public class User {
     @Indexed(unique = true)
     private String username;
 
+    @JsonIgnore
     @NotBlank(message = "Password is required")
     private String password;
 
@@ -39,17 +42,17 @@ public class User {
     private String lastName;
 
     @CreatedDate
-    private LocalDateTime createdAt;
+    private LocalDateTime createdAt; // Automatically populated
 
     @LastModifiedDate
     private LocalDateTime updatedAt;
 
-    private boolean enabled = true;
+    private boolean enabled = true; // Default to true
 
     @NotNull(message = "Roles cannot be null")
-    private Set<String> roles = new HashSet<>();
+    private Set<String> roles = new HashSet<>(); // Default to empty set
 
-    private List<String> accounts; // References to Account IDs
+    private List<String> accounts; // Default to null (can be handled in service layer)
 
     // Getters and Setters
     public String getId() {
