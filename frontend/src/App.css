@@ -1,7 +1,8 @@
-
-
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up the full viewport height */
 }
 
 .App-logo {
@@ -37,4 +38,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html, body {
+  overflow-y: auto; /* Allow vertical scrolling */
+  height: 100%; /* Ensure the body takes up the full height */
 }

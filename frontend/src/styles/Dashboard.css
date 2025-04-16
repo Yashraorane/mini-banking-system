@@ -1,0 +1,63 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow-y: auto; /* Allow the entire page to scroll */
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background-color: var(--background-color);
+}
+
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 960px;
+  width: 100%;
+  background-color: var(--header-background);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+.tab-navigation {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid #3c4753;
+  padding: 0 1rem;
+}
+
+.tab-navigation button {
+  flex: 1;
+  text-align: center;
+  padding: 0.75rem 0;
+  font-size: 1rem; /* Ensure consistent font size */
+  font-weight: 600; /* Ensure consistent font weight */
+  color: #9dabb8;
+  border: none;
+  background: none; /* Ensure no background color is applied */
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.tab-navigation button.active {
+  color: var(--text-color); /* Use theme variable for active text color */
+  border-color: var(--text-color); /* Use theme variable for active border color */
+}
+
+.tab-navigation button:hover {
+  color: var(--text-color); /* Ensure hover color matches active color */
+}
+
+.tab-content {
+  margin-top: 1.5rem; /* Ensure proper spacing between heading and content */
+}

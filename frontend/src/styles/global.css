@@ -28,6 +28,8 @@
 body {
   background-color: var(--background-color);
   color: var(--text-color);
+  font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
+  line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -38,6 +40,9 @@ body {
 button {
   background-color: var(--button-background);
   color: var(--button-text-color);
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Footer styles for light and dark themes */
@@ -54,11 +59,13 @@ footer {
 }
 
 a {
-  color: var(--link-color);
   text-decoration: none;
+  color: inherit;
   transition: color 0.3s ease;
 }
 
 a:hover {
   color: var(--link-hover-color);
 }
+
+

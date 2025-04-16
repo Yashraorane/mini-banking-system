@@ -34,7 +34,7 @@
 }
 
 .login-form input::placeholder {
-  color: var(--text-color);
+  color: var(--footer-text-color);
 }
 
 .login-form .btn-primary {

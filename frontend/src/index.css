@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%; /* Ensure the body takes up the full height */
+  overflow-y: scroll; /* Ensure scrolling works */
+}
+
 body {
   font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif;
   background-color: #f8fafc; /* Light slate background */
@@ -49,6 +54,13 @@ footer {
   margin-top: auto; /* Push footer to the bottom */
 }
 
-html,body{
-  overflow: hidden;
+/* Hide scrollbar for WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar width */
+  height: 0; /* Remove horizontal scrollbar height */
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none; /* Hide scrollbar */
 }

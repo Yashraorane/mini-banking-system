@@ -1,12 +1,12 @@
 .footer {
   text-align: center;
-  background-color: var(--footer-background, #f8fafc); /* Default light theme */
+  background-color: var(--footer-background, #f8fafc);
   color: var(--footer-text-color, #49779c);
   position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: auto; /* Push footer to the bottom */
-  font-size: 0.875rem; /* Reduce font size */
+  margin-top: auto;
+  font-size: 0.875rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -18,9 +18,8 @@
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Reduce spacing between links */
-  margin-bottom: 0.5rem; /* Reduce margin */
-  color: inherit; /* Use inherited color */
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .footer-links a {
@@ -34,5 +33,5 @@
 }
 
 .footer-text {
-  font-size: 0.75rem; /* Reduce font size */
+  font-size: 0.75rem;
 }

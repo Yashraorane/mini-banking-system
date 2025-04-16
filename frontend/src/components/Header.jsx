@@ -66,10 +66,10 @@ export default function Header() {
       </div>
       <nav className="header-nav">
         <a href="/">Home</a>
-        <a href="/products">Products</a>
-        <a href="/resources">Resources</a>
-        <a href="/company">Company</a>
-        <a href="/pricing">Pricing</a>
+        <a href="/dashboard">Dashboard</a>
+        
+        
+        
       </nav>
       <div className="header-buttons">
         {user ? (

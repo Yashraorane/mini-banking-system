@@ -3,7 +3,9 @@
   flex-direction: row; /* Ensure items are in a row */
   gap: 1.5rem; /* Reduce gap for better alignment */
   padding: 2rem 1rem; /* Reduce padding */
-  background-color: white;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   align-items: center; /* Vertically align items */
@@ -29,13 +31,13 @@
 .hero-text h1 {
   font-size: 2rem; /* Reduce font size */
   font-weight: 800;
-  color: #0d151c;
+  color: var(--text-color);
   line-height: 1.2;
 }
 
 .hero-text p {
   font-size: 0.9rem; /* Reduce font size */
-  color: #0d151c;
+  color: var(--footer-text-color);
 }
 
 .hero-buttons {
@@ -45,26 +47,26 @@
 
 .btn-primary {
   padding: 0.5rem 1rem; /* Reduce padding */
-  background-color: #2094f3;
-  color: white;
+  background-color: var(--button-background);
+  color: var(--button-text-color);
   font-weight: bold;
   border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #176bb3;
+  background-color: var(--link-hover-color);
 }
 
 .btn-secondary {
   padding: 0.5rem 1rem; /* Reduce padding */
-  background-color: #e7eef4;
-  color: #0d151c;
+  background-color: var(--header-background);
+  color: var(--text-color);
   font-weight: bold;
   border-radius: 0.5rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-secondary:hover {
-  background-color: #d6e4f0;
+  background-color: var(--footer-background);
 }
